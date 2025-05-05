@@ -12,6 +12,31 @@ body {
     font-size: 20px;
 }
 
+/* Dark theme styles */
+body.dark {
+    background-color: #333;
+    color: #fff;
+}
+
+body.dark .subtitle {
+    color: #4CA5E8; /* Lighter blue for better contrast */
+}
+
+body.dark .container {
+    border-color: #555;
+}
+
+.theme-selector {
+    text-align: right;
+    margin-bottom: 15px;
+}
+
+#theme-select {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
 .container {
     max-width: 600px;
     margin: 50px auto;
