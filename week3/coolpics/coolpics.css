@@ -126,3 +126,53 @@ footer {
     justify-items: center;
   }
 }
+
+/* Hide utility class */
+.hide {
+  display: none !important;
+}
+
+/* Modal styles */
+dialog[open] {
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  border: none;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+dialog img {
+  display: block;
+  max-width: 90vw;
+  max-height: 90vh;
+  margin: 5vh auto 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px #222;
+}
+.close-viewer {
+  position: absolute;
+  top: 20vh;
+  right: 2vw;
+  background: #fff;
+  border: 1px solid #888;
+  border-radius: 4px;
+  font-size: 1.5em;
+  cursor: pointer;
+  z-index: 11;
+  padding: 0.2em 0.6em;
+}
+@media (min-width: 1000px) {
+  dialog img {
+    max-width: 70vw;
+    max-height: 90vh;
+  }
+  .close-viewer {
+    right: 20vw;
+  }
+}
